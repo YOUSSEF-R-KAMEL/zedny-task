@@ -2,8 +2,6 @@
 
 A **modern, responsive, and dynamic** Angular dashboard featuring **dark mode**, **interactive charts**, and **tooltip support**. Built using **Angular, PrimeNG, and Chart.js**, this project is designed for scalability and maintainability.  
 
-![Dashboard Preview](https://via.placeholder.com/1200x600?text=Dashboard+Preview)  
-
 ---
 
 ## 🎯 Features  
