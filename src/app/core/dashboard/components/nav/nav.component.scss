@@ -1,0 +1,99 @@
+@import '../../../../../assets/scss/variables';
+
+nav {
+  background: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  .search-container {
+    width: 78%;
+    input {
+      background-color: $main-color;
+      border: 1px solid #FFFFFF26;
+      border-radius: 32px;
+      padding: 9px 40px;
+      &::placeholder {
+        color: #575b72;
+      }
+    }
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      z-index: 99;
+    }
+  }
+  .icons-list {
+    width: 12%;
+    text-align: center;
+    img {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+
+
+@media (max-width: 1600px) {
+  .search-container {
+    width: 70% !important;
+  }
+  .icons-list {
+    width: 15% !important;
+    img {
+      margin-left: 12px !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .search-container {
+    width: 65% !important;
+  }
+  .icons-list {
+    width: 20% !important;
+    img {
+      margin-left: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .search-container {
+    width: 50% !important;
+  }
+  .icons-list {
+    width: 35% !important;
+    img {
+      margin-left: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .search-container {
+    margin-left: 10% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .icons-list {
+    img {
+      margin-left: 5px !important;
+    }
+  }
+  ::ng-deep .p-button-label {
+      display: none;
+  }
+  ::ng-deep .p-button-icon {
+    margin: 0;
+  }
+}
+
+
+::ng-deep .p-button {
+  padding: 8px 10px !important;
+  margin-left: 5px;
+}
+
+}

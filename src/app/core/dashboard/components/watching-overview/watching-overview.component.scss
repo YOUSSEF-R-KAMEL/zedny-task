@@ -1,0 +1,26 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import '../../../../../assets/scss/variables';
+
+.card {
+  background: $bg;
+  border-radius: 16px;
+  padding: 10px;
+  position: relative;
+  button {
+    position: absolute;
+    top: 22%;
+    left: 70%;
+    color: #fff;
+    z-index: 999999;
+    cursor: pointer;
+    padding: 7px 25px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.3s;
+    background: linear-gradient( 283.36deg, #00C6FB 0%, #005BEA 100%);
+      &:hover {
+        background: linear-gradient( 283.36deg, #00C6FB 0%, #00C6FB 100%);
+      }
+  }
+}

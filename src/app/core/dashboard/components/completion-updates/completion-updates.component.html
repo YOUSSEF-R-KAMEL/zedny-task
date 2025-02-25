@@ -1,0 +1,20 @@
+<div class="card mt-3">
+  <app-heading-chart title="Completion Updates"></app-heading-chart>
+  <div class="grid mx-2 mb-6">
+    @for (item of items; track $index) {
+      <div class="col-12 md:col-6 lg:col-4 xl:col-2" data-aos="zoom-in">
+        <div class="box">
+          <div class="image-container">
+            <img [src]="'assets/vectors/completion-updates/' + item.icon + '.svg'" alt="">
+          </div>
+          <h4>{{item.count}}</h4>
+          <div class="text flex">
+            <span class="title">COMPLETED <br> {{item.title}}</span>
+            <span class="date">ONLY IN 2 WEEKS</span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <p-chart type="bar" [data]="data" [options]="options" />
+</div>

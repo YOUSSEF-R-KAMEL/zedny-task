@@ -1,0 +1,24 @@
+<div class="course-enrollment">
+  <div class="grid">
+    @for (course of courses; track $index) {
+      <div class="col-12 lg:col-6 xl:col-4" data-aos="zoom-in">
+        <div class="box">
+          <div class="flex align-items-center justify-content-between w-8">
+            <div>
+              <h2 class="course-title">{{course.title}}</h2>
+              <span class="course-desc">{{course.description}}</span>
+            </div>
+            <span class="courses-number">16</span>
+          </div>
+          <div class="courses-complete flex mt-3 w-7">
+            <p class="courses-complete-number mb-2">{{course.coursesComplete}}</p>
+            <p>{{course.progress}}</p>
+          </div>
+          <div class="prog">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

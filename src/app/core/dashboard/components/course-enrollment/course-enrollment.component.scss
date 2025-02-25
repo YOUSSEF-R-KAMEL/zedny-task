@@ -1,0 +1,59 @@
+@import '../../../../../assets/scss/variables';
+.box {
+  // width: 97%;
+  margin-top: 15px;
+  background: $bg;
+  box-shadow: 0px 2px 4px 0px #00000013;
+  padding: 12px;
+  border-radius: 16px;
+  .course-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38.4px;
+    letter-spacing: 0.5px;
+    margin-bottom: -8px;
+  }
+  .course-desc {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: $grey-color;
+  }
+  .courses-number {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #02C27A;
+  }
+  .courses-complete {
+    // width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: $grey-color;
+    .courses-complete-number {
+      font-weight: 400;
+      font-size: 13.67px;
+      line-height: 21px;
+      letter-spacing: 0.5px;
+    }
+  }
+  .prog {
+    background-color: #242841;
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    span {
+      width: 68%;
+      height: 100%;
+      background-color: $secondary-color;
+      z-index: 2;
+      display: block;
+    }
+  }
+}
+

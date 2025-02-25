@@ -1,0 +1,136 @@
+@import '../../../../../assets/scss/variables';
+
+.box {
+  background: $bg;
+  padding: 10px 18px;
+  border-radius: 16px;
+  // Start First Box
+  h5 {
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: rgba(230, 236, 240, 1);
+  }
+  ul {
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      .text {
+        .image-container {
+          width: 48px;
+          height: 48px;
+          border-radius: 24px;
+          padding: 12px;
+          margin-right: 9px;
+          text-align: center;
+        }
+        h6 {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19.2px;
+          letter-spacing: 0.5px;
+          color: rgba(230, 236, 240, 1);
+          margin: 0;
+        }
+      }
+    }
+  }
+  // Start Second Box
+  .btns {
+    ::ng-deep p-button {
+      button {
+        // width: 145px;
+        height: 45px;
+        outline: none;
+        margin-right: 15px;
+        color: rgba(255, 193, 7, 1);
+        border-width: 4px;
+        transition: 0.3s;
+        margin-bottom: 25px;
+        &:hover {
+          background: rgba(255, 193, 7, 1);
+          color: #fff !important;
+          border: 4px solid rgba(255, 193, 7, 1);
+        }
+      }
+      @media (min-width: 1200px) {
+        button {
+          width: 130px;
+          height: 47px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+      @media (max-width: 768px) {
+        button {
+          width: 100%;
+          height: 47px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &.red {
+      ::ng-deep p-button {
+        button {
+          margin-bottom: 5px;
+          color: rgba(252, 24, 90, 1);
+          &:hover {
+            background: rgba(252, 24, 90, 1);
+            color: #FFF !important;
+            border: 4px solid rgba(252, 24, 90, 1);
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .time {
+      margin-top: 30px;
+    }
+  }
+  // Start third Box
+  &.most {
+    .skills {
+      text-align: center;
+      button {
+        width: 100%;
+        padding: 6.67px 1px;
+        border-radius: 6px;
+        background: linear-gradient(280.92deg, #7928CA 0%, #FF0080 100%);
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 11px;
+        text-align: center;
+      }
+    }
+  }
+  // Start forth Box
+  &.resources {
+    ul {
+      li {
+        padding: 6px 0;
+        img {
+          width: 36px;
+          animation: spin 1.2s linear infinite;  
+        }
+        .number {
+          color: rgba(211, 215, 220, 1)
+        }
+      }
+    }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+}

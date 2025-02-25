@@ -1,0 +1,13 @@
+<nav class="pt-3">
+  <div class="search-container relative">
+    <input type="text" class="w-12" placeholder="Search">
+    <img class="search-icon" src="assets/vectors/nav/search.svg" alt="">
+  </div>
+  <div class="icons-list">
+    @for (icon of icons; track $index) {
+      <img [src]="'assets/vectors/nav/' + icon + '.svg'" alt="">
+    }
+  </div>
+  <p-button label="Setting" icon="pi pi-user" iconPos="right" />
+
+</nav>

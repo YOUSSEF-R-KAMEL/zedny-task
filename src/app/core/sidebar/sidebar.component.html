@@ -1,0 +1,26 @@
+<i class="pi pi-bars" (click)="showSideBar()"></i>
+<div class="sidebar">
+  <i class="pi pi-times" (click)="hideSideBar()"></i>
+  <ul class="sidebar-list p-0">
+    @for (item of sidebarItems; track $index) {
+      <li class="sidebar-item flex justify-content-between align-items-center"
+      [ngClass]="{'active-link': item.content === 'Dashboard' || item.content === 'Analysis'}"
+      >
+        <div class="flex align-items-center">
+          @if (item.type !== 'heading') {
+            <img class="sidebar-icon-before" [src]="'assets/vectors/sidebar/' +  item.icon + '.svg'" alt="">
+          }
+          <a class="sidebar-text" [ngClass]="{'heading': item.type === 'heading'}">{{item.content}}</a>
+        </div>
+        @if (item.type == 'title') {
+          @if (item.content == 'Dashboard') {
+            <img class="sidebar-icon-after chevron-down" src="assets/vectors/sidebar/ChevronDown.svg" alt="">
+          } @else {
+            <img class="sidebar-icon-after" src="assets/vectors/sidebar/ChevronLeft.svg" alt="">
+          }
+        }
+      </li>
+    }
+  </ul>
+</div>
+
